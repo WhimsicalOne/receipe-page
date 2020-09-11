@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&family=Playfair+Display:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #F2994A;
+    --white: #fff;
+    --black: #000;
+    --off-black: #4F4F4F;
+    --text: #333333;
+    --sub-title: #BDBDBD;
+    --heading: 'Playfair Display', serif;
+    --main-text: 'Montserrat', sans-serif;
+}
+
+h1, h2, h4 {
+    font-family: var(--heading);
+}
+
+p {
+    font-family: var(--main-text);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.material-icons.md-16 {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+.container .row {
+    display: flex;
+    flex-direction: column;
+}
+.introduction {
+    margin-bottom: 25px;
+}
+.introduction h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+.introduction-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.introduction-text img {
+    width: 5%;
+}
+.introduction-text p {
+    width: 90%;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--off-black)
+}
+.image-container {
+    margin-bottom: 25px;
+}
+.image-container img {
+    border-radius: 12px;
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.4);
+}
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+.box .full-width {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+.box .one-third {
+    flex: 1;
+}
+.box .inner-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.box .inner-box span {
+    margin-right: 5px;
+}
+.box .sub-title {
+    color: var(--sub-title);
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 10px;
+    text-transform: uppercase;
+    font-family: var(--main-text);
+}
+
+.box p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    font-family: var(--main-text);
+}
+.yielding .material-icons,
+.yielding p {
+    color: var(--main-color);
+}
+
+.ingredients > * {
+    margin-bottom: 10px;
+}
+.ingredients h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+.ingredients h4 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 20px 0px;
+}
+.inner-ingredients {
+    display: flex;
+    align-items: flex-start;
+}
+.inner-ingredients input {
+    margin-right: 10px;
+}
+.inner-ingredients p.text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: var(--main-text);
+    margin-top: -5px;
+    color: var(--text);
+}
+.instructions > * {
+    margin-bottom: 15px;
+}
+.instructions h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+
+.inner-instructions {
+    display: flex;
+    align-items: flex-start;
+}
+.inner-instructions .inner-instructions-box {
+    padding: 4px 10px 8px; 
+    border-radius: 5px;
+    background: var(--main-color);
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: var(--heading);
+}
+.inner-instructions p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
+.source a {
+    font-size: 12px;
+    line-height: 150%;   
+    color: var(--sub-title);
+}
+footer {
+    font-family: var(--main-text);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+    text-align: center;
+    margin: 20px 0;
+}
+@media (min-width: 576px) { 
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .container .row {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    
+    .container .row .col:nth-child(4) {
+        flex-basis: 70%;
+    }
+    .container .row .col .inner-col {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .container .row .col .inner-col > div:nth-child(1) {
+        justify-self: flex-end;
+    }
+    .container .row .col .inner-col > div:nth-child(2) {
+        flex-basis: 70%;
+    }
+
+    .introduction h1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 64px;
+    }
+
+    .introduction-text {
+        justify-content: unset;
+    }
+
+    .introduction-text img {
+        width: 2%;
+        margin-right: 10px;
+    }
+
+    .introduction-text p {
+        width: 50%;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+        padding: 10px;
+        width: 160px;
+        height: auto;
+    }
+    .box > * {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .box .inner-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .box p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .ingredients h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .ingredients h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .inner-ingredients p.text {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+}
+
+@media (min-width: 992px) { 
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .container {
+        max-width: 1200px;
+    }
+}
